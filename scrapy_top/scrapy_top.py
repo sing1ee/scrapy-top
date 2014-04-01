@@ -12,7 +12,6 @@ def main():
     PORT = 6023
     INTERVAL = 2
     opts, args = getopt.getopt(sys.argv[1:], "i:h:p:")
-    print opts
     for op, value in opts:
         if op == "-i":
             INTERVAL = int(value)
@@ -37,7 +36,7 @@ def main():
             for k, v in data.items():
                 x.add_row([k, v])
             print x
-            time.sleep(2)
+            time.sleep(INTERVAL)
             i = os.system("clear")
         except:
             print "Can't connect to %s:%d" % (HOST, PORT)
