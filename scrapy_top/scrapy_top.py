@@ -6,14 +6,13 @@ import time
 import sys
 import getopt
 
-HOST = 'localhost'
-PORT = 6023
-INTERVAL = 2
-
 
 def main():
+    HOST = 'localhost'
+    PORT = 6023
+    INTERVAL = 2
     opts, args = getopt.getopt(sys.argv[1:], "i:h:p:")
-
+    print opts
     for op, value in opts:
         if op == "-i":
             INTERVAL = int(value)
