@@ -7,8 +7,16 @@ simple tools like linux top command to view scrapy status
 1. telnetlib default in python distribution
 2. prettytable https://code.google.com/p/prettytable/
 
+###Install
+
+```python
+python setup.py install
+```
+
+maybe you need **sudo**
+
 ###Run
-For now, you can python scrapy-top -i 2 -h localhost -p 6023
+For now, you can scrapy-top -i 2 -h localhost -p 6023
 
 1. -i: interval seconds, defaut 2 secs
 2. -h: host, default localhost
